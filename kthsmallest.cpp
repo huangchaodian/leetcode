@@ -1,6 +1,11 @@
+#Given a binary search tree, write a function kthSmallest to find the kth smallest element in it.
+#
+#Note: 
+#You may assume k is always valid, 1 ≤ k ≤ BST's total elements.
+u
 #include<iostream>
 #include<functional>
-using namespace std;
+sing namespace std;
 struct TreeNode {
 	int val;
 	TreeNode *left;
@@ -28,14 +33,5 @@ class Solution {
 };
 int main(){
 	Solution s;
-	int a=0;
-	std::function<int(int)> fib = [&](int n) -> int
-	{
-		a++;
-
-		return (n<=2) ? (1) : (fib(n-1)+fib(n-2));
-
-	};
-	cout<<fib(13);
 	return 0;
 }
